@@ -1,0 +1,13 @@
+(var testCases ["xo" "xxOo" "xxxm" "Oo" "ooom" "xxxoo"])
+(var counter 0)
+(function XO testCase
+    (var a (freqs (lower-case testCase)))
+    (return (= (a "x") (a "o")))
+)
+(while (< counter (len testCases))
+    (var testCase (counter testCases))
+    (var result (XO testCase))
+    (print-str result)
+    (print-str "\n")
+    (var counter (inc counter))
+)
